@@ -1,0 +1,110 @@
+/* Responsive Background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures visibility */
+    height: auto;
+    margin: 0;
+    background: linear-gradient(135deg, #3b5998, #8b9dc3);
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+/* Registration Card */
+.register-card {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Form Headings */
+.register-card h2 {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.form-control {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #3b5998;
+    box-shadow: 0 0 8px rgba(59, 89, 152, 0.5);
+}
+
+/* Password Criteria Styling */
+#passwordCriteria {
+    font-size: 14px;
+    text-align: left;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+#passwordCriteria li {
+    padding: 4px 0;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Circular Indicator (⬤) */
+.criteria-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: red; /* Default: Not met */
+    margin-right: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* JavaScript will update this dynamically */
+.criteria-met .criteria-icon {
+    background: green; /* Turns green when criteria is met */
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background: #3b5998;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff !important;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background: #2d4373;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .register-card {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .form-control {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    #passwordCriteria {
+        font-size: 12px;
+    }
+}

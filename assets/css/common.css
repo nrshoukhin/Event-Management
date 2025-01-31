@@ -1,0 +1,46 @@
+@media (max-width: 768px) {
+    .logout-btn {
+        margin-top: 10px;
+    }
+}
+#searchResults {
+    position: absolute;
+    z-index: 1050; /* Ensure it stays above other elements */
+    top: 100%; /* Position below the input field */
+    left: 0;
+    right: 0;
+    background-color: #fff; /* White background for results */
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#eventsTable, #attendeesTable{
+    width: 100% !important;
+    padding-top: 10px;
+}
+
+.navbar {
+    background: #3b5998;
+}
+
+.navbar .nav-link:hover {
+    color: #ffdd57 !important;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .form-control {
+    border: none;
+    outline: none;
+}
+
+.navbar .logout-btn:hover {
+    background: rgba(255, 255, 255);
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+    .navbar .form-control {
+        width: 100%;
+    }
+}

@@ -1,0 +1,99 @@
+/* Background Gradient */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #3b5998, #8b9dc3);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Login Card */
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Form Heading */
+.login-card h2 {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Success & Error Messages */
+.alert {
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Input Fields */
+.form-control {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #3b5998;
+    box-shadow: 0 0 8px rgba(59, 89, 152, 0.5);
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background: #3b5998;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff !important;
+    transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background: #2d4373;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .login-card {
+        margin: 0 10px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .login-card {
+        padding: 10px;
+    }
+
+    .login-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
