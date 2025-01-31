@@ -119,7 +119,7 @@ GET https://example.com/api/event_details/<event_id>
 -H "Authorization: Bearer <your_generated_token>"
 ```
 
-Replace `<your_generated_token>` with the token you received in Step 1.
+Put the token you got in Step 1 where it says `<your_generated_token>`. Then, replace `<event_id>` with the ID of the event you want to get details for.
 
 #### Example Response (Success):
 ```json
